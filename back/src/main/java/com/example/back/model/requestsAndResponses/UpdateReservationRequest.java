@@ -1,0 +1,19 @@
+package com.example.back.model.requestsAndResponses;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.Date;
+
+@AllArgsConstructor
+@Getter
+@Setter
+public class UpdateReservationRequest {
+    private Long id;
+    private Date start_date;
+    private Date end_date;
+    private String rooms;
+    private String description;
+}

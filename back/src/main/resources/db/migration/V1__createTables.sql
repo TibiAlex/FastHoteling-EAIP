@@ -1,0 +1,4 @@
+create table app_user (id bigint not null auto_increment, password varchar(255), role varchar(255), username varchar(255), primary key (id)) engine=MyISAM;
+create table history (id bigint not null auto_increment, description varchar(255), end_date datetime not null, rooms varchar(255) not null, start_date datetime not null, user_name varchar(255) not null, primary key (id)) engine=MyISAM;
+create table reservations (id bigint not null auto_increment, description varchar(255), end_date datetime not null, rooms varchar(255) not null, start_date datetime not null, user_name varchar(255) not null, primary key (id)) engine=MyISAM;
+create table room (id bigint not null auto_increment, number integer, occupancy integer, primary key (id)) engine=MyISAM;
